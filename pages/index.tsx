@@ -8,16 +8,15 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import toast from "react-hot-toast";
 
-import curDot from "cursor-dot";
-
 const Home: NextPage = () => {
   const notify = (message: string) =>
     toast(message, {
       duration: 4000,
       position: "top-center",
       style: {
-        backgroundColor: "#1e107a",
-        color: "#fff9f2",
+        backgroundColor: "rgb(8,8,8)",
+        color: "#fff",
+        border: "1px solid white",
       },
       icon: "🔨",
       ariaProps: {
@@ -39,6 +38,7 @@ const Home: NextPage = () => {
   }, []);
 
   useEffect(() => {
+    console.log("here");
     notify(
       "This website is still under construction, but feel free to contact me for work."
     );
@@ -57,12 +57,13 @@ const Home: NextPage = () => {
 
       <main className="min-h-screen w-screen bg-theme-bg overflow-x-hidden">
         <section className="flex h-screen w-screen items-center px-6 home">
-          <h1 className="font-medium text-9xl init-title text-theme-accent font-playfair">
+          <h1 className="font-bold text-6xl sm:text-8xl md:text-9xl init-title title-gradient">
             <span className="title-span">Ivan</span>
             <br />
             <span className="title-span">Audouard</span>
           </h1>
         </section>
+        <section className="px-6"></section>
       </main>
     </>
   );

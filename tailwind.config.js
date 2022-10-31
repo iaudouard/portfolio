@@ -13,9 +13,9 @@ module.exports = {
       },
       colors: {
         theme: {
-          bg: "#fff9f2",
-          main: "#1e107a",
-          accent: "#1e107a",
+          bg: "rgb(0,0,0)",
+          main: "rgb(0,0,0)",
+          accent: "#fff",
         },
       },
     },
