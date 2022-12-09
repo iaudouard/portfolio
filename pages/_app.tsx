@@ -1,7 +1,10 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import "../styles/globals.css";
 
-import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Nav from "../components/Nav";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -9,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Nav />
       <Component {...pageProps} />
-      <Toaster />
+      <ToastContainer />
     </>
   );
 }
