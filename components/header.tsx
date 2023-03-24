@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { MutableRefObject, useRef } from "react";
 
 import download from "../public/assets/lotties/download.json";
 import github from "../public/assets/lotties/github.json";
@@ -7,17 +7,17 @@ import mail from "../public/assets/lotties/mail.json";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 
-const Nav = () => {
+const Header = () => {
   const mailRef = useRef(null);
   const githubRef = useRef(null);
   const linkedinRef = useRef(null);
   const downloadRef = useRef(null);
 
-  const onIconHover = (ref: React.MutableRefObject<Player>) => {
+  const onIconHover = (ref: MutableRefObject<Player>) => {
     ref.current!.setPlayerDirection(1);
     ref.current!.play();
   };
-  const onIconLeave = (ref: React.MutableRefObject<Player>) => {
+  const onIconLeave = (ref: MutableRefObject<Player>) => {
     ref.current!.setPlayerDirection(-1);
     ref.current!.play();
   };
@@ -89,4 +89,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Header;
