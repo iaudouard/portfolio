@@ -11,13 +11,7 @@ module.exports = {
       width: {
         "4ch": "4ch",
       },
-      colors: {
-        theme: {
-          bg: "rgb(0,0,0)",
-          main: "rgb(0,0,0)",
-          accent: "#fff",
-        },
-      },
+      colors: {},
     },
   },
   plugins: [],

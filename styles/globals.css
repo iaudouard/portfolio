@@ -4,33 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .init-title {
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  .title-gradient {
-    background-image: linear-gradient(
-      to right bottom,
-      #d16ba5,
-      #c777b9,
-      #ba83ca,
-      #aa8fd8,
-      #9a9ae1,
-      #8aa7ec,
-      #79b3f4,
-      #69bff8,
-      #52cffe,
-      #41dfff /* #46eefa #5ffbf1 */
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
 html,
 body {
   padding: 0;
