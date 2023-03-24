@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 
-import download from "../public/assets/download.json";
-import github from "../public/assets/github.json";
-import linkedin from "../public/assets/linkedin.json";
-import mail from "../public/assets/mail.json";
+import download from "../public/assets/lotties/download.json";
+import github from "../public/assets/lotties/github.json";
+import linkedin from "../public/assets/lotties/linkedin.json";
+import mail from "../public/assets/lotties/mail.json";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 
