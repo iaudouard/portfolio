@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 
-import mail from "../public/assets/mail.json";
+import download from "../public/assets/download.json";
 import github from "../public/assets/github.json";
 import linkedin from "../public/assets/linkedin.json";
-import download from "../public/assets/download.json";
+import mail from "../public/assets/mail.json";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 
@@ -23,12 +23,12 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex absolute p-4 right-8 top-8 rounded-lg justify-evenly items-center bg-theme-main border-solid border">
+    <nav className="flex absolute p-4 right-8 top-8 rounded-lg justify-evenly items-center border-solid border">
       <a
         onMouseEnter={() => onIconHover(mailRef)}
         onMouseLeave={() => onIconLeave(mailRef)}
         className="mx-4"
-        href="mailto:ivanaudouard1@gmail.com"
+        href="mailto:i@ivanaudouard.com"
         target="_blank"
         rel="noreferrer"
       >
@@ -44,7 +44,7 @@ const Nav = () => {
         onMouseEnter={() => onIconHover(githubRef)}
         onMouseLeave={() => onIconLeave(githubRef)}
         className="mx-4"
-        href="https://github.com/fusunnn"
+        href="https://github.com/iaudouard"
         target="_blank"
         rel="noreferrer"
       >
